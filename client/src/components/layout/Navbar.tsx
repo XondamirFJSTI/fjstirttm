@@ -25,7 +25,7 @@ export default function Navbar() {
               <a className="flex items-center gap-2">
                 <Building2 className="h-8 w-8 text-primary" />
                 <div>
-                  <span className="text-lg font-bold text-primary block leading-tight">FJSTI</span>
+                  <span className="text-lg font-bold text-primary block leading-tight">FJSTIRTTM</span>
                   <span className="text-xs text-gray-600 block">Raqamli ta'lim markazi</span>
                 </div>
               </a>

@@ -12,7 +12,7 @@ export default function Home() {
             Farg'ona jamoat salomatligi tibbiyot instituti
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8">
-            Raqamli ta'lim texnologiyalari markazi
+            FJSTIRTTM
           </p>
           <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
             Zamonaviy tibbiyot ta'limi uchun raqamli yechimlar va innovatsion texnologiyalar
