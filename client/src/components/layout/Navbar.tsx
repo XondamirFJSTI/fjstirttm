@@ -10,6 +10,8 @@ export default function Navbar() {
     { href: "/staff", label: "Xodimlar" },
     { href: "/news", label: "Yangiliklar" },
     { href: "/courses", label: "O'quv materiallar" },
+    { href: "/videos", label: "Video darslar" },
+    { href: "/tests", label: "Online testlar" },
     { href: "/register", label: "Ro'yxatdan o'tish" },
   ];
 

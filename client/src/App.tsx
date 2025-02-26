@@ -8,6 +8,8 @@ import About from "@/pages/about";
 import Staff from "@/pages/staff";
 import News from "@/pages/news";
 import Courses from "@/pages/courses";
+import Videos from "@/pages/videos";
+import Tests from "@/pages/tests";
 import Register from "@/pages/register";
 import Admin from "@/pages/admin";
 import NotFound from "@/pages/not-found";
@@ -23,6 +25,8 @@ function Router() {
           <Route path="/staff" component={Staff} />
           <Route path="/news" component={News} />
           <Route path="/courses" component={Courses} />
+          <Route path="/videos" component={Videos} />
+          <Route path="/tests" component={Tests} />
           <Route path="/register" component={Register} />
           <Route path="/admin" component={Admin} />
           <Route component={NotFound} />
