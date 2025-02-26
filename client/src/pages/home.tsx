@@ -1,63 +1,87 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { School, Users, Newspaper, BookOpen } from "lucide-react";
+import { School, Users, Newspaper, BookOpen, GraduationCap, Brain } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="space-y-12">
-      <section className="text-center py-16 bg-white rounded-lg shadow-sm">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Raqamli ta'lim texnologiyalari markazi
-        </h1>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-          Zamonaviy tibbiyot ta'limi uchun raqamli yechimlar
-        </p>
-        <Link href="/register">
-          <Button size="lg">Ro'yxatdan o'tish</Button>
-        </Link>
+    <div className="space-y-16">
+      <section className="relative py-20 px-4 -mt-8 bg-gradient-to-br from-primary/90 to-primary text-white rounded-b-3xl shadow-lg">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Farg'ona jamoat salomatligi tibbiyot instituti
+          </h1>
+          <p className="text-xl md:text-2xl text-white/90 mb-8">
+            Raqamli ta'lim texnologiyalari markazi
+          </p>
+          <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
+            Zamonaviy tibbiyot ta'limi uchun raqamli yechimlar va innovatsion texnologiyalar
+          </p>
+          <Link href="/register">
+            <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
+              Ro'yxatdan o'tish
+            </Button>
+          </Link>
+        </div>
       </section>
 
-      <section className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <Card>
-          <CardContent className="pt-6">
-            <School className="h-12 w-12 text-primary mb-4" />
-            <h2 className="text-xl font-semibold mb-2">Zamonaviy ta'lim</h2>
-            <p className="text-gray-600">
-              Eng so'nggi raqamli texnologiyalar asosida o'qitish
-            </p>
-          </CardContent>
-        </Card>
+      <section className="max-w-7xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+          Bizning imkoniyatlar
+        </h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Card className="bg-white hover:shadow-lg transition-shadow">
+            <CardContent className="pt-6">
+              <GraduationCap className="h-12 w-12 text-primary mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Zamonaviy ta'lim</h3>
+              <p className="text-gray-600">
+                Eng so'nggi raqamli texnologiyalar asosida o'qitish va amaliyot
+              </p>
+            </CardContent>
+          </Card>
 
-        <Card>
-          <CardContent className="pt-6">
-            <Users className="h-12 w-12 text-primary mb-4" />
-            <h2 className="text-xl font-semibold mb-2">Malakali xodimlar</h2>
-            <p className="text-gray-600">
-              Tajribali va malakali o'qituvchilar jamoasi
-            </p>
-          </CardContent>
-        </Card>
+          <Card className="bg-white hover:shadow-lg transition-shadow">
+            <CardContent className="pt-6">
+              <Brain className="h-12 w-12 text-primary mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Interaktiv ta'lim</h3>
+              <p className="text-gray-600">
+                Virtual laboratoriyalar va simulyatorlar yordamida amaliy ko'nikmalarni rivojlantirish
+              </p>
+            </CardContent>
+          </Card>
 
-        <Card>
-          <CardContent className="pt-6">
-            <Newspaper className="h-12 w-12 text-primary mb-4" />
-            <h2 className="text-xl font-semibold mb-2">Yangiliklar</h2>
-            <p className="text-gray-600">
-              Sohaga oid so'nggi yangiliklar va yangiliklardan xabardor bo'ling
-            </p>
-          </CardContent>
-        </Card>
+          <Card className="bg-white hover:shadow-lg transition-shadow">
+            <CardContent className="pt-6">
+              <BookOpen className="h-12 w-12 text-primary mb-4" />
+              <h3 className="text-xl font-semibold mb-2">O'quv resurslar</h3>
+              <p className="text-gray-600">
+                Video darslar, elektron kitoblar va boshqa raqamli materiallar
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
 
-        <Card>
-          <CardContent className="pt-6">
-            <BookOpen className="h-12 w-12 text-primary mb-4" />
-            <h2 className="text-xl font-semibold mb-2">O'quv materiallar</h2>
-            <p className="text-gray-600">
-              Keng qamrovli o'quv materiallari katalogi
-            </p>
-          </CardContent>
-        </Card>
+      <section className="bg-gray-50 py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+            Statistika
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <div className="text-4xl font-bold text-primary mb-2">1000+</div>
+              <div className="text-gray-600">Talabalar</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-primary mb-2">50+</div>
+              <div className="text-gray-600">O'quv kurslari</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-primary mb-2">24/7</div>
+              <div className="text-gray-600">Online ta'lim</div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
