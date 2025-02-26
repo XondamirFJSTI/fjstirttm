@@ -4,6 +4,8 @@ import { queryClient } from "./lib/queryClient";
 import { Toaster } from "@/components/ui/toaster";
 import Navbar from "@/components/layout/Navbar";
 import AdminLayout from "@/components/layout/AdminLayout";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import "./lib/i18n"; // Import i18n configuration
 import Home from "@/pages/home";
 import About from "@/pages/about";
 import Staff from "@/pages/staff";
@@ -42,20 +44,31 @@ function Router() {
         {/* Public routes */}
         <Route path="*">
           <>
-            <Navbar />
-            <main className="max-w-7xl mx-auto px-4 py-8">
-              <Switch>
-                <Route path="/" component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/staff" component={Staff} />
-                <Route path="/news" component={News} />
-                <Route path="/courses" component={Courses} />
-                <Route path="/videos" component={Videos} />
-                <Route path="/tests" component={Tests} />
-                <Route path="/register" component={Register} />
-                <Route component={NotFound} />
-              </Switch>
-            </main>
+            <div className="flex flex-col min-h-screen">
+              <header>
+                <div className="max-w-7xl mx-auto px-4 py-2">
+                  <div className="flex justify-end mb-2">
+                    <LanguageSwitcher />
+                  </div>
+                  <Navbar />
+                </div>
+              </header>
+              <main className="flex-1">
+                <div className="max-w-7xl mx-auto px-4 py-8">
+                  <Switch>
+                    <Route path="/" component={Home} />
+                    <Route path="/about" component={About} />
+                    <Route path="/staff" component={Staff} />
+                    <Route path="/news" component={News} />
+                    <Route path="/courses" component={Courses} />
+                    <Route path="/videos" component={Videos} />
+                    <Route path="/tests" component={Tests} />
+                    <Route path="/register" component={Register} />
+                    <Route component={NotFound} />
+                  </Switch>
+                </div>
+              </main>
+            </div>
           </>
         </Route>
       </Switch>

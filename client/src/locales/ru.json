@@ -1,0 +1,33 @@
+{
+  "common": {
+    "courses": "Учебные материалы",
+    "videos": "Видео уроки",
+    "tests": "Тесты",
+    "admin": "Админ панель",
+    "login": "Вход",
+    "register": "Регистрация"
+  },
+  "courses": {
+    "newCourse": "Новый курс",
+    "title": "Название",
+    "description": "Описание",
+    "duration": "Длительность",
+    "save": "Сохранить",
+    "saving": "Сохранение...",
+    "edit": "Редактировать",
+    "delete": "Удалить",
+    "durationExample": "Например: 2 месяца"
+  },
+  "admin": {
+    "registrations": "Регистрации",
+    "name": "Имя",
+    "phone": "Телефон",
+    "email": "Email",
+    "course": "Курс",
+    "status": "Статус",
+    "actions": "Действия",
+    "pending": "В ожидании",
+    "approved": "Подтверждено",
+    "approve": "Подтвердить"
+  }
+}

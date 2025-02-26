@@ -1,0 +1,33 @@
+{
+  "common": {
+    "courses": "Learning Materials",
+    "videos": "Video Lessons",
+    "tests": "Tests",
+    "admin": "Admin Panel",
+    "login": "Login",
+    "register": "Register"
+  },
+  "courses": {
+    "newCourse": "New Course",
+    "title": "Title",
+    "description": "Description",
+    "duration": "Duration",
+    "save": "Save",
+    "saving": "Saving...",
+    "edit": "Edit",
+    "delete": "Delete",
+    "durationExample": "Example: 2 months"
+  },
+  "admin": {
+    "registrations": "Registrations",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "course": "Course",
+    "status": "Status",
+    "actions": "Actions",
+    "pending": "Pending",
+    "approved": "Approved",
+    "approve": "Approve"
+  }
+}

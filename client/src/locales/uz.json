@@ -1,0 +1,33 @@
+{
+  "common": {
+    "courses": "O'quv materiallar",
+    "videos": "Video darslar",
+    "tests": "Testlar",
+    "admin": "Admin panel",
+    "login": "Kirish",
+    "register": "Ro'yxatdan o'tish"
+  },
+  "courses": {
+    "newCourse": "Yangi kurs",
+    "title": "Nomi",
+    "description": "Tavsif",
+    "duration": "Davomiyligi",
+    "save": "Saqlash",
+    "saving": "Saqlanmoqda...",
+    "edit": "Tahrirlash",
+    "delete": "O'chirish",
+    "durationExample": "Masalan: 2 oy"
+  },
+  "admin": {
+    "registrations": "Ro'yxatdan o'tganlar",
+    "name": "Ism",
+    "phone": "Telefon",
+    "email": "Email",
+    "course": "Kurs",
+    "status": "Status",
+    "actions": "Amallar",
+    "pending": "Kutilmoqda",
+    "approved": "Tasdiqlangan",
+    "approve": "Tasdiqlash"
+  }
+}
